@@ -38,15 +38,34 @@
     "vlucas/phpdotenv": "^2.0.1",
     "johnpbloch/wordpress": "4.7.3",
     "oscarotero/env": "^1.0",
-    "roots/wp-password-bcrypt": "1.0.0"
+    "roots/wp-password-bcrypt": "1.0.0",
+    "wpackagist-plugin/contact-form-7": "4.7",
+    "wpackagist-plugin/duracelltomi-google-tag-manager": "1.5.1",
+    "wpackagist-plugin/woocommerce": "3.0.0",
+    "wpackagist-plugin/wordfence": "6.3.6"
   },
   "require-dev": {
-    "squizlabs/php_codesniffer": "^2.5.1"
+    "squizlabs/php_codesniffer": "^2.5.1",
+    "wpackagist-plugin/reveal-template": "3.2",
+    "wpackagist-plugin/contact-form-7": "4.7",
+    "wpackagist-plugin/duracelltomi-google-tag-manager": "1.5.1",
+    "wpackagist-plugin/woocommerce": "3.0.0",
+    "wpackagist-plugin/wordfence": "6.3.6"
   },
   "extra": {
     "installer-paths": {
-      "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
-      "web/app/themes/{$name}/": ["type:wordpress-theme"]
+      "web/app/plugins/advanced-custom-fields-pro": ["type:wordpress-plugin"],
+      "web/app/plugins/product-enquiry-pro": ["type:wordpress-plugin"],
+      "web/app/plugins/homepage-control": ["type:wordpress-plugin"],
+      "web/app/plugins/soil": ["type:wordpress-plugin"],
+      "web/app/plugins/storefront-mega-menus": ["type:wordpress-plugin"],
+      "web/app/plugins/storefront-parallax-hero": ["type:wordpress-plugin"],
+      "web/app/plugins/storefront-powerpack": ["type:wordpress-plugin"],
+      "web/app/plugins/storefront-title-toggle": ["type:wordpress-plugin"],
+      "web/app/plugins/theme-customisations-master": ["type:wordpress-plugin"],
+      "web/app/plugins/woothemes-updater": ["type:wordpress-plugin"],
+      "web/app/themes/pharmacy/": ["type:wordpress-theme"],
+      "web/app/themes/storefront/": ["type:wordpress-theme"]
     },
     "wordpress-install-dir": "web/wp"
   },

@@ -1,0 +1,2117 @@
+/*
+Theme Name:		Majac Medical
+Theme URI:		https://woocommerce.com/products/pharmacy/
+Description:	This theme is based on the Pharmacy child theme for Storefront. As a Storefront child theme, it benefits from all of the tasty WooCommerce integration features that Storefront provides.
+Author:			Michael McMahon building on work from WooCommerce
+Author URI:		https://woocommerce.com
+Template:		storefront
+Version:		2.0.6
+License:		GNU General Public License v2 or later
+License URI:	http://www.gnu.org/licenses/gpl-2.0.html
+Tags:			light, green, two-columns, right-sidebar, left-sidebar, responsive-layout, accessibility-ready
+Text Domain:	pharmacy
+*/
+
+
+/* =Pharmacy styles starts here
+-------------------------------------------------------------- */
+
+@import 'bourbon';
+@import 'susy';
+@import '../storefront/assets/sass/utils/variables';
+
+$headings: Oxygen, sans-serif;
+$sans-serif: Karla, sans-serif;
+
+body {
+	background: #ffffff;
+	font-size: .857em;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+#page {
+	overflow-x: hidden;
+}
+
+// Typography
+body,
+button,
+input,
+select,
+textarea {
+	font-family: $sans-serif;
+	font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 700;
+	letter-spacing: 0 !important;
+	font-family: $headings;
+
+	a {
+		font-weight: inherit;
+	}
+}
+
+.site-branding h1 {
+	font-size: 2.244em;
+}
+
+hr {
+	background: rgba(#000,.1);
+}
+
+ol,
+ul {
+	margin: 0 0 1.618em 1.1em;
+}
+
+ul {
+	list-style-type: square;
+}
+
+code,
+kbd,
+pre,
+tt,
+var {
+	background: rgba(#000,.025);
+}
+
+a,
+input {
+	@include transition(all 250ms ease-in-out);
+}
+
+a {
+	&:hover {
+		color: currentcolor;
+	}
+
+	&:focus {
+		outline-style: dotted;
+	}
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button,
+.added_to_cart,
+.widget-area .widget a.button,
+.site-header-cart .widget_shopping_cart a.button {
+	box-shadow: none;
+	border-radius: 999em;
+	-webkit-font-smoothing: antialiased;
+
+	&:focus {
+		outline-style: dotted;
+		outline-width: 1px;
+	}
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea,
+.input-text {
+	background: rgba(#000,.025);
+	border-radius: 0;
+	border: 1px solid rgba(#000,.1);
+	padding-left: 1em;
+	color: inherit;
+	box-shadow: none;
+
+	&:focus {
+		background: transparent;
+		color: inherit;
+	}
+}
+
+@mixin placeholder {
+	::-webkit-input-placeholder { @content }
+	:-moz-placeholder           { @content }
+	::-moz-placeholder          { @content }
+	:-ms-input-placeholder      { @content }
+}
+
+@include placeholder {
+	color: inherit;
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+	@include transition(opacity 250ms ease-in-out);
+}
+
+img.avatar {
+	padding: 0;
+}
+
+.cat-links:before {
+	content: "\f07b";
+}
+
+.comments-link:before {
+	content: "\f075";
+}
+
+table {
+	border: 1px solid rgba(#000,.1);
+
+	td,
+	th {
+		padding: .857em;
+	}
+
+	thead th {
+		border-bottom-width: 1px;
+	}
+
+	tbody {
+		td {
+			background: transparent;
+			border-bottom: 1px solid rgba(#000,.1);
+		}
+
+		tr:nth-child(2n) td {
+			background: transparent;
+		}
+	}
+
+	&.cart {
+		td {
+			&.product-remove {
+				border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+			}
+
+			&.actions {
+				border: 0;
+				padding: 1em;
+			}
+		}
+	}
+}
+
+// Navigation
+button.menu-toggle {
+	font-weight: bold;
+	margin: 0;
+	outline-color: transparent;
+}
+
+.pharmacy-primary-navigation {
+	-webkit-font-smoothing: antialiased;
+	margin-bottom: 1.618em;
+	text-shadow: none;
+	@include clearfix;
+}
+
+.main-navigation a:focus {
+	outline-color: currentcolor;
+}
+
+.woocommerce-breadcrumb {
+	background: rgba(#000,.025);
+	border-bottom: 1px solid rgba(#000,.08);
+	box-sizing: border-box;
+	margin: -3.055em -9999px 3.055em;
+	padding: 1em 9999px;
+
+	a {
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+// Borders
+.woocommerce-tabs {
+	border-style: solid;
+	border-width: 0 1px 1px;
+	margin-bottom: 2.618em;
+	padding-top: 0;
+
+	#respond {
+		margin-bottom: 0;
+	}
+
+	ul.tabs {
+		border-bottom: 1px solid rgba(#000,.1);
+		margin-bottom: 0;
+
+		li {
+			border-bottom: 1px solid rgba(#000,.1);
+			display: block;
+			float: left;
+			margin: 0 0 1.618em;
+			width: 50%;
+
+			&.active:after {
+				display: none;
+			}
+
+			&:first-child {
+				border-right: 1px solid rgba(#000,.1);
+			}
+
+			a {
+				color: inherit;
+				display: block;
+				outline-color: transparent;
+				padding: 1em 1.618em;
+				position: relative;
+
+				&:before,
+				&:after {
+					content: "";
+					display: block;
+					height: 100%;
+					left: 0;
+					position: absolute;
+					width: 100%;
+					@include transition(all 250ms ease-in-out);
+				}
+
+				&:before {
+					height: 3px;
+					left: -1px;
+					top: 0;
+					width: calc(100% + 2px);
+				}
+
+				&:after {
+					bottom: -1px;
+					height: 1px;
+				}
+			}
+		}
+	}
+
+	#tab-description,
+	#tab-reviews {
+		padding: 1.618em 1.618em .618em;
+	}
+}
+
+// Layout
+.site-header {
+	padding-top: 1.618em;
+	border-bottom: 0;
+}
+
+.col-full,
+.header-widget-region {
+	box-sizing: content-box;
+}
+
+.header-widget-region {
+	margin-bottom: 1.618em;
+
+	.col-full {
+		padding: 0 1em;
+	}
+
+	.widget {
+		font-size: 1em;
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			border: 0;
+			padding-bottom: 0;
+		}
+	}
+}
+
+.col-full {
+	padding: 0;
+}
+
+.site-content {
+	> .col-full {
+		padding-top: 2.618em;
+	}
+}
+
+.home:not(.page-template-template-homepage) {
+	.site-content {
+		> .col-full {
+			padding-top: 0;
+		}
+	}
+}
+
+.pharmacy-product-section,
+.storefront-product-section {
+	border: 0;
+	border-bottom: 1px solid rgba(#000,.1);
+	margin-bottom: 2.618em;
+	margin-left: -9999px;
+	margin-right: -9999px;
+	padding: 0 9999px 1em;
+	@include clearfix;
+
+	&:last-child {
+		margin-bottom: 0;
+
+		&:after {
+			display: none;
+		}
+	}
+
+	ul.products {
+		margin-bottom: 0;
+	}
+
+	> p.clearfix {
+		margin-bottom: 1.618em;
+	}
+
+	.section-title {
+		margin-bottom: 1.387em;
+		text-align: center;
+	}
+
+	a + p {
+		display: none;
+	}
+}
+
+.pharmacy-product-section {
+	border-top: 3px solid;
+	border-bottom: 3px solid;
+	padding-top: 2.618em;
+}
+
+.storefront-product-section + .pharmacy-product-section {
+	margin-top: -2.65em;
+}
+
+.hentry {
+	border-bottom: 1px solid rgba(#000,.1);
+	margin-bottom: 2.618em;
+	padding-bottom: 1em;
+	position: relative;
+
+	.entry-header {
+		border: 0;
+		margin-bottom: 1.618em;
+		position: relative;
+
+		h1 {
+			border-bottom: 0;
+			font-size: 2.618em;
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+	}
+}
+
+.page,
+.woocommerce-page {
+	.hentry {
+		border-bottom: 0;
+		margin-bottom: 0;
+	}
+}
+
+.site-main .post-navigation {
+	margin-top: -3.618em;
+}
+
+.post-navigation + #comments .comments-title {
+	margin-top: 1.167em;
+}
+
+.content-area {
+	position: relative;
+	margin-bottom: 0 !important;
+}
+
+.site-search .widget_product_search input[type=search],
+.site-search .widget_product_search input[type=text],
+.header-widget-region .widget_product_search input[type=search],
+.header-widget-region .widget_product_search input[type=text] {
+	background: #fff;
+	border-color: transparent;
+	border-radius: 999em;
+	padding-top: .809em;
+	padding-bottom: .809em;
+
+	&:focus {
+		box-shadow: 0 0 4px rgba(#000,.5);
+	}
+}
+
+.site-search .widget_product_search form:before {
+	line-height: 1.618;
+	top: .809em;
+}
+
+.site-main {
+	margin-bottom: 0;
+}
+
+.site-footer {
+	border-top: 1px solid rgba(#000,.08);
+	padding: 0;
+
+	a {
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.footer-widgets + .pharmacy-site-info-wrapper {
+		border-top: 1px solid rgba(#000,.08);
+		margin-left: -9999px;
+		margin-right: -9999px;
+		padding-left: 9999px;
+		padding-right: 9999px;
+		@include clearfix;
+	}
+}
+
+.footer-widgets {
+	padding: 2.618em 0 1em;
+}
+
+.sph-hero,
+.sprh-hero {
+	margin-left: 0;
+	margin-right: 0;
+
+	& + .pharmacy-featured-products {
+		border-top: 0;
+		margin-top: -2.618em;
+	}
+
+	.col-full {
+		padding: 1.618em;
+		-webkit-font-smoothing: antialiased;
+	}
+}
+
+.sph-hero-content {
+	font-size: 1.2135em;
+
+	p {
+		margin-bottom: 1.3333em;
+	}
+}
+
+.page-template-template-homepage .site-main .sph-hero:first-child,
+.page-template-template-homepage .site-main .sprh-hero:first-child,
+.page-template-template-homepage .site-main > .type-page:first-child {
+	margin-top: -2.618em;
+}
+
+.page-template-template-homepage .site-main > .type-page:first-child {
+	margin-bottom: 2.618em;
+}
+
+// Comments / Reviews
+#comments {
+	padding-top: 0;
+
+	#comment-nav-above {
+		display: none;
+	}
+
+	.comments-title {
+		border: 0;
+		border-top: 1px solid rgba(#000,.1);
+		font-size: 1.387em;
+		padding-bottom: 0;
+		padding-top: 3.775em;
+		margin-bottom: .618em;
+		margin-top: 3.775em;
+	}
+
+	.comment-list {
+		margin-bottom: 0;
+
+		.comment {
+			border-bottom: 1px solid rgba(#000,.1);
+			margin: 1.618em 0;
+		}
+
+		.comment-content {
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+
+		.comment-meta {
+			margin-bottom: 1.618em;
+		}
+	}
+
+	.woocommerce-pagination {
+		display: block !important;
+		margin-bottom: 1.618em;
+	}
+}
+
+.comment-text .description {
+	padding: 0;
+	border: 0;
+}
+
+#reviews .commentlist li {
+	border-bottom: 1px solid rgba(#000,.1);
+	margin-bottom: 1.618em;
+
+	&:last-child {
+		border-bottom: 0;
+	}
+}
+
+.commentlist {
+	img.avatar {
+		border-radius: 50%;
+	}
+}
+
+#tab-description {
+	margin-bottom: -1.618em;
+}
+#tab-description,
+#tab-reviews {
+	padding-right: 5.8823529412%;
+}
+
+#respond {
+	background: transparent;
+	border-top: 1px solid rgba(#000,.1);
+	margin-bottom: 5.236em;
+	padding: 1.618em 0 0;
+}
+
+#review_form_wrapper #respond {
+	border-top: 0;
+	padding-top: 0;
+}
+
+#comments + #review_form_wrapper #respond {
+	border-top: 1px solid rgba(#000,.1);
+	padding-top: 1.618em;
+}
+
+// Products
+.site-main,
+.main-navigation {
+	ul.products {
+		margin-bottom: 0;
+
+		li.product {
+			border: 1px solid rgba(#000,.1);
+			margin-bottom: 1.618em;
+			padding: 1.618em;
+
+			&.product-category {
+				border: 0;
+				padding: 0;
+
+				h3 {
+					padding: 1em 1.618em;
+
+					.count {
+						color: inherit;
+						font-weight: normal;
+						opacity: .75;
+					}
+				}
+
+				img {
+					margin: 0;
+				}
+
+				a {
+					display: block;
+					outline-color: transparent;
+					position: relative;
+
+					&:before {
+						border: 3px solid;
+						box-sizing: border-box;
+						content: "";
+						display: block;
+						height: 100%;
+						left: 0;
+						opacity: 0;
+						position: absolute;
+						top: 0;
+						width: 100%;
+						@include transition(all 250ms ease-in-out);
+					}
+
+					&:active:before,
+					&:focus:before,
+					&:hover:before {
+						opacity: 1;
+					}
+				}
+
+				.category-description {
+					display: block;
+					padding: 0 1.618em 1.618em;
+
+					&:empty {
+						display: none;
+					}
+				}
+			}
+
+			h3 {
+				font-size: 1.2em;
+				margin-bottom: 0;
+			}
+
+			.button {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.onsale {
+	border: 0;
+	border-radius: 100%;
+	font-family: $headings;
+	font-size: .75em;
+    height: 4em;
+    line-height: 4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 4em;
+}
+
+.storefront-sorting {
+	border: 1px solid rgba(0,0,0,.1);
+	margin-bottom: 1.888em;
+	padding: 1em;
+}
+
+.site-header-cart {
+	margin-bottom: 0;
+
+	.cart-contents {
+		background: transparent;
+		height: 2.724216em;
+		width: 2.724216em;
+
+		&:after {
+			line-height: 2.724216;
+		}
+	}
+}
+
+// Single product
+.single-product {
+	div.product {
+		.summary {
+			.price {
+				font-weight: 400;
+				color: #fff;
+				display: inline-block;
+				padding: .53em 2.244em .53em 1em;
+				@include border-right-radius(999em);
+				position: relative;
+
+				&:after {
+					display: block;
+					position: absolute;
+					content: "";
+					top: 50%;
+					right: 1em;
+					height: 6px;
+					width: 6px;
+					margin-top: -3px;
+					background-color: #fff;
+					border-radius: 100%;
+				}
+			}
+		}
+
+		.stock {
+			font-weight: bold;
+
+			&:before {
+				display: none;
+			}
+		}
+
+		table.variations {
+			border: 0;
+			margin-bottom: -.809em;
+			padding: 0;
+
+			td {
+				border: 0;
+			}
+
+			tr {
+				display: block;
+				margin-bottom: .809em;
+			}
+
+			.reset_variations {
+				margin-left: .5em;
+			}
+
+			.value {
+				margin-bottom: 0;
+			}
+
+			& + .single_variation_wrap {
+				margin-top: 1.618em;
+			}
+		}
+
+		.single_variation {
+			.price {
+				margin-bottom: 1.618em;
+			}
+		}
+
+		form.cart {
+			border-top: 1px solid rgba(#000,.1);
+			border-bottom: 1px solid rgba(#000,.1);
+		}
+	}
+}
+
+// Cart
+table.cart {
+	margin-bottom: 5.236em;
+
+	thead {
+		text-indent: 0;
+
+		th {
+			border-bottom: 1px solid rgba(#000,.1);
+			padding: .857em;
+		}
+	}
+
+	td,
+	th {
+		padding: .857em;
+	}
+}
+
+.mini_cart_item .amount {
+	font-size: inherit;
+}
+
+.woocommerce-cart {
+	.hentry {
+		border: 0;
+		margin-bottom: 2em;
+		padding-bottom: 0;
+	}
+
+	.cart_totals {
+		th {
+			border-bottom: 1px solid rgba(#000,.1);
+		}
+
+		p,
+		form {
+			margin-bottom: 0;
+		}
+
+		.woocommerce-shipping-calculator {
+			margin-bottom: -.809em;
+
+			p {
+				margin-bottom: .809em;
+			}
+		}
+	}
+}
+
+.cart-contents:after {
+	border-radius: 50%;
+}
+
+.amount {
+	font-weight: bold;
+}
+
+.widget .amount,
+.shop_table .amount,
+.cart_totals .amount {
+	font-size: 1em;
+}
+
+#order_review {
+	.shop_table {
+		border: 0;
+		margin-bottom: 0;
+
+		thead th,
+		tbody td {
+			border-bottom-style: dotted;
+		}
+	}
+}
+
+// WooCommerce - Global
+.woocommerce {
+	position: relative;
+}
+
+.woocommerce-product-search {
+	margin-bottom: 0;
+}
+
+.woocommerce-message {
+	width: 100%;
+	margin: -5.236em 0 5.236em !important;
+	padding-left: 0;
+	padding-right: 0;
+	position: relative;
+
+	&:before {
+		background: #0f834d;
+		content: "";
+		display: block;
+		height: 100%;
+		margin-left: -50%;
+		position: absolute;
+		top: 0;
+		width: 200%;
+		z-index: -1;
+	}
+}
+
+.woocommerce-message,
+.woocommerce-error,
+.woocommerce-info,
+.woocommerce-noreviews,
+p.no-comments {
+	border: 0;
+}
+
+.woocommerce-pagination {
+	border-bottom: 0;
+	padding-bottom: 0;
+}
+
+.woocommerce-account {
+	.login {
+		.button {
+			margin-bottom: 1.618em;
+		}
+	}
+}
+
+// Widgets
+.widget {
+	margin-bottom: 1.618em;
+}
+
+.widget-area {
+	border-top: 1px solid rgba(#000,.1);
+	margin-bottom: 2.618em;
+	margin-top: 2.618em;
+	padding-top: 2.618em;
+	position: relative;
+
+	&:before,
+	&:after {
+		background: rgba(#000,.1);
+		content: "";
+		display: block;
+		height: 1px;
+		left: -2.618em;
+		position: absolute;
+		top: -1px;
+		width: 2.618em;
+	}
+
+	&:after {
+		left: auto;
+		right: -2.618em;
+	}
+
+	.widget {
+		background: transparent;
+		box-shadow: inset 0 0 0 1px rgba(#000,.1);
+		margin-bottom: 1.88em;
+		padding: 1.618em 1.618em .1em;
+		position: relative;
+
+		h3.widget-title {
+			border-bottom: 0;
+			padding-bottom: 0;
+		}
+	}
+}
+
+.header-widget-region {
+	border-bottom: 1px solid rgba(#000,.1);
+	margin-bottom: 0;
+
+	.widget {
+		padding: 1.618em 0 0;
+	}
+}
+
+.widget_product_categories ul li:before,
+.widget_categories ul li:before {
+	content: "\f07b" !important;
+}
+
+.widget_product_categories,
+.widget_categories {
+	ul {
+		li.current-cat {
+			&:before {
+				content: "\f07c" !important;
+			}
+		}
+	}
+}
+
+.widget_recent_comments ul li:before {
+	content: "\f075" !important;
+}
+
+.widget_archive ul li:before {
+	content: "\f07c" !important;
+}
+
+.widget_recent_entries {
+	.post-date {
+		display: block;
+		margin-left: 1.618em;
+	}
+}
+
+.widget_recent_entries ul li:before,
+.widget_pages ul li:before {
+	content: "\f15c" !important;
+}
+
+.widget_recent_entries,
+.widget_pages,
+.widget_categories,
+.widget_archive,
+.widget_recent_comments,
+.widget_nav_menu,
+.widget_links,
+.widget_product_categories {
+	ul {
+		margin-bottom: 1.618em;
+	}
+}
+
+.widget_contact_info {
+	.contact-map {
+		margin-bottom: .809em;
+	}
+
+	 > div:last-of-type {
+		 margin-bottom: 1.618em;
+	 }
+}
+
+.widget_nav_menu {
+	ul.menu {
+		li.current_page_item > a,
+		li.current-menu-item > a,
+		li.current_page_ancestor > a,
+		li.current-menu-ancestor > a {
+			color: currentcolor;
+		}
+	}
+}
+
+.widget_shopping_cart {
+	a:hover {
+		color: inherit;
+	}
+
+	.product_list_widget {
+		margin-bottom: 1.618em;
+	}
+}
+
+// Homepage template
+.page-template-template-homepage {
+	.site-main {
+		padding-top: 0;
+	}
+}
+
+// Product Review
+.storefront-reviews {
+	ul.product-reviews {
+		margin-bottom: 0;
+
+		li.product-review {
+			border: 1px solid rgba(#000,.1);
+			margin-bottom: 1.618em;
+			padding: 1.618em;
+
+			&.style-3 {
+				border: 1px solid rgba(#000,.1);
+			}
+
+			.amount {
+				font-size: 1em;
+			}
+		}
+	}
+}
+
+.site .sr-carousel .owl-prev:before,
+.site .sr-carousel .owl-next:before {
+	color: inherit;
+}
+
+.site ul.product-reviews li.product-review.style-1 .sr-images .avatar {
+	height: 2.618em;
+	width: 2.618em;
+}
+
+// Checkout Customiser compatibility
+.woocommerce-checkout.scc-distraction-free-checkout {
+	.pharmacy-primary-navigation {
+		display: none;
+	}
+}
+
+// Storefront Parallax Hero compatibility
+.sph-hero,
+.sprh-hero {
+	.col-full {
+		background: transparent !important;
+		box-shadow: none;
+	}
+}
+
+// Jetpack
+.woocommerce-page {
+	#infinite-handle {
+		display: none;
+	}
+}
+
+.woocommerce-cart,
+.woocommerce-checkout {
+	.sharedaddy {
+		display: none;
+	}
+}
+
+#ship-to-different-address label {
+	font-weight: 600;
+}
+
+.woocommerce-infinite-scroll {
+	.woocommerce-pagination,
+	.woocommerce-result-count {
+		display: none;
+	}
+}
+
+.infinite-scroll .navigation.pagination,
+.infinite-scroll.neverending .site-footer {
+	display: none;
+}
+
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+
+#infinite-handle {
+	margin-bottom: 2.618em;
+
+	span {
+		background: transparent;
+		color: inherit;
+		display: inline-block;
+		font-size: inherit;
+		padding: 0;
+
+		button {
+			display: inline-block;
+			font-weight: bold;
+			line-height: 1;
+			padding: .618em 1em;
+			@include transition(all 250ms ease-in-out);
+
+			&:active,
+			&:focus,
+			&:hover {
+				font-weight: bold;
+				line-height: 1;
+				padding: .618em 1em;
+			}
+		}
+	}
+}
+
+.infinite-loader {
+	margin-bottom: 5.236em;
+}
+
+@media screen and (min-width: 768px) {
+	$horizontal_padding: 3.631em;
+
+	body,
+	html {
+		&:before,
+		&:after {
+			display: block;
+		}
+	}
+
+	.col-full {
+		max-width: 80em;
+	}
+
+	.content-area {
+		padding: 0;
+	}
+
+	.pharmacy-primary-navigation {
+		border-bottom: 1px solid rgba(#000,.1);
+		-webkit-font-smoothing: antialiased;
+		margin: 0 -9999px;
+		padding: 0 9999px;
+		@include clearfix;
+		clear: both;
+	}
+
+	.sd-sticky-navigation,
+	.sd-sticky-navigation:before,
+	.sd-sticky-navigation:after {
+		border-bottom: 1px solid rgba(#000,.1);
+	}
+
+	.site-search {
+		margin-bottom: 0;
+	}
+
+	.site-header {
+		padding-top: 1.618em;
+
+		.site-branding,
+		.site-header-cart,
+		.site-logo-anchor,
+		.custom-logo-link {
+			margin-bottom: 1.618em;
+		}
+
+		.site-branding,
+		.col-full > .site-logo-anchor,
+		.col-full > .site-logo-link,
+		.col-full > .custom-logo-link {
+			width: 73.9130434782%;
+		}
+	}
+
+	.header-widget-region {
+		.col-full {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+	}
+
+	.site-content {
+		> .col-full {
+			padding-top: 5.236em;
+		}
+	}
+
+	.site-footer {
+		.footer-widgets {
+			padding-top: 5.236em;
+		}
+	}
+
+	.main-navigation {
+		ul.menu,
+		ul.nav-menu {
+			@include clearfix;
+			float: left;
+
+			> li {
+				border: 0;
+				float: left;
+				margin: 0 .809em;
+
+				&:first-child {
+					margin-left: 0;
+				}
+
+				a {
+					padding: 1em 0;
+					position: relative;
+				}
+
+				> ul > li:first-child {
+					border-top: 0;
+
+					> ul li:first-child {
+						border-top: 0;
+					}
+				}
+
+				> ul {
+					margin-top: 1px;
+				}
+			}
+
+			ul {
+				border-bottom: 1px solid rgba(#000,.1);
+
+				li {
+					background: transparent;
+					border: 1px solid rgba(#000,.1);
+					border-bottom: 0;
+					display: block;
+
+					a {
+						&:hover {
+							background: rgba(#000,.025);
+						}
+
+						&:before {
+							display: none;
+						}
+					}
+				}
+			}
+
+			a {
+				&:focus {
+					outline-color: transparent;
+				}
+
+				&:before {
+					background: transparent;
+					bottom: -1px;
+					content: "";
+					display: block;
+					height: 3px;
+					left: 0;
+					position: absolute;
+					width: 100%;
+					@include transition(all 250ms ease-in-out);
+				}
+			}
+		}
+	}
+
+	.pharmacy-secondary-navigation {
+		background: rgba(#000,.1);
+		border-bottom: 1px solid rgba(#fff,.25);
+		margin: -1.618em -9999px 1.618em;
+		padding: 0 9999px;
+		@include clearfix;
+	}
+
+	.secondary-navigation {
+		ul.menu {
+			float: none;
+
+			a {
+				padding: .857em 0;
+
+				&:active,
+				&:focus,
+				&:hover {
+					opacity: .5;
+				}
+			}
+
+			> li {
+				margin: 0 .809em;
+
+				&:first-child {
+					margin-left: 0;
+				}
+
+				&:last-child {
+					margin-right: 0;
+				}
+
+				a:before {
+					display: none;
+				}
+			}
+
+			li.current_page_item > a,
+			li.current-menu-item > a,
+			li.current_page_ancestor > a,
+			li.current-menu-ancestor > a {
+				font-weight: bold;
+			}
+
+			ul a {
+				padding-left: 1em;
+				padding-right: 1em;
+			}
+		}
+	}
+
+	.site-header-cart {
+		padding: 0;
+
+		a.cart-contents {
+			height: auto;
+			padding: 1em 5em 1em 0;
+			position: relative;
+			text-align: right;
+			width: auto;
+
+			&:after {
+				padding: .5em;
+				border-radius: 100%;
+				height: 1.618em;
+				width: 1.618em;
+				line-height: 1.618;
+				right: 0;
+				top: .5em;
+				position: absolute;
+				text-align: center;
+			}
+
+			.count {
+				border-radius: 99em 0 0 99em;
+				display: block;
+				line-height: 2.244;
+				font-size: .75em;
+				font-weight: 700;
+				height: 2.244em;
+				opacity: 1;
+				padding: 0 2em 0 1em;
+				position: absolute;
+				right: 2.244em;
+				text-align: left;
+				top: 50%;
+				width: auto;
+				@include transform(translateY(-50%));
+			}
+
+			.amount {
+				font-weight: bold;
+			}
+		}
+
+		.widget_shopping_cart {
+			border: 3px solid;
+
+			img {
+				padding: .327em;
+				background: #fff;
+			}
+
+			a.remove:before {
+				color: inherit;
+			}
+
+			li,
+			p.buttons,
+			p.total {
+				background: none;
+			}
+
+			.product_list_widget {
+				margin-bottom: 0;
+
+				li {
+					border-bottom-style: solid;
+				}
+			}
+		}
+	}
+
+	.woocommerce-active .site-header .site-header-cart,
+	.main-navigation {
+		padding-top: 0;
+
+		> li,
+		ul.menu > li,
+		ul.nav-menu > li {
+			> a,
+			.cart-contents {
+				//padding-top: 1em;
+			}
+		}
+	}
+
+	.woocommerce-active.swc-header-no-search .site-header .secondary-navigation,
+	.woocommerce-active .site-header .secondary-navigation,
+	.site-header .secondary-navigation {
+		@include clearfix;
+		float: none;
+		margin: 0;
+		width: 100%;
+	}
+
+	.site-header-cart .cart-contents:after {
+		top: 1em;
+	}
+
+	.woocommerce-pagination {
+		a {
+			font-weight: 700;
+		}
+	}
+
+	.storefront-sorting {
+		border-width: 1px 0;
+		margin-bottom: 5.236em;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.woocommerce-tabs {
+		border: 1px solid rgba(#000,.1);
+		margin-bottom: 5.236em;
+		padding-top: 2.618em;
+		position: relative;
+
+		&:before {
+			background: rgba(#000,.1);
+			content: "";
+			display: block;
+			height: 100%;
+			left: 29.4117647059%;
+			margin-left: -1px;
+			position: absolute;
+			top: 0;
+			width: 1px;
+		}
+
+		ul.tabs {
+			border: 0;
+			border-top: 1px solid rgba(#000,.1);
+
+			li {
+				border-bottom-style: solid;
+				border-right: 0;
+				float: none;
+				margin: 0;
+				width: 100%;
+
+				&:first-child {
+					border-right: 0;
+				}
+
+				a {
+					display: block;
+					margin-right: 1px;
+
+					&:before,
+					&:after {
+						content: "";
+						display: block;
+						height: 100%;
+						left: 0;
+						position: absolute;
+						width: 100%;
+					}
+
+					&:before {
+						height: calc(100% + 2px);
+						left: -1px;
+						top: -1px;
+						width: 3px;
+					}
+
+					&:after {
+						bottom: 0;
+						left: auto;
+						right: -1px;
+						width: 1px;
+					}
+				}
+			}
+		}
+
+		#tab-description,
+		#tab-reviews {
+			padding: 0;
+			padding-right: 2.8em;
+		}
+	}
+
+	.woocommerce-breadcrumb {
+		margin-bottom: 6.11em;
+		margin-top: -6.11em;
+	}
+
+	.site-main,
+	.main-navigation {
+		ul.products {
+			li.product {
+				margin-bottom: 5.236em;
+				padding: 1.618em;
+				@include transition(all 250ms ease-in-out);
+
+				&:hover {
+					border-color: rgba(#000,.25);
+					box-shadow: 0 0 4px rgba(#000,.1);
+				}
+			}
+		}
+	}
+
+	// Parallax hero commpatibility
+	.page-template-template-homepage .site-main .sph-hero:first-child,
+	.page-template-template-homepage .site-main .sprh-hero:first-child,
+	.page-template-template-homepage .site-main > .type-page:first-child {
+		margin-top: -5.236em;
+	}
+
+	.page-template-template-homepage .site-main > .type-page:first-child {
+		margin-bottom: 5.236em;
+	}
+
+	.page-template-template-homepage {
+		.content-area {
+			.sph-hero,
+			.sprh-hero {
+				margin-bottom: 1em;
+				margin-top: 0;
+			}
+			.sph-hero {
+				margin-bottom: 5.236em;
+			}
+
+			.sprh-full-height {
+				.overlay {
+					padding-left: 4.236em !important;
+					padding-right: 4.236em !important;
+				}
+			}
+		}
+	}
+
+	.widget-area .widget {
+		.sph-hero,
+		.sprh-hero {
+			margin-bottom: 1.618em;
+			text-shadow: none;
+		}
+	}
+
+	.sph-hero,
+	.sprh-hero {
+		margin-left: 0;
+		margin-right: 0;
+
+		& + .pharmacy-featured-products {
+			margin-top: -5.236em;
+		}
+
+		.col-full {
+			background-color: transparent !important;
+			padding: 0;
+		}
+	}
+
+	.site-main {
+		.sph-hero,
+		.sprh-hero {
+			.overlay {
+				padding: 5.236em;
+			}
+		}
+	}
+
+	// Homepage template
+	.page-template-template-homepage-php {
+		ul.tabs {
+			border-bottom: 1px solid rgba(#000,.1);
+			margin: 0 0 5.236em;
+			margin-left: -9999px;
+			margin-right: -9999px;
+			padding-left: 9999px;
+			padding-right: 9999px;
+			position: relative;
+			text-align: center;
+			z-index: 6;
+			@include clearfix;
+
+			li {
+				border-right: 1px solid rgba(#000,.1);
+				display: inline-block;
+
+				&:first-child {
+					border-left: 1px solid rgba(#000,.1);
+				}
+
+				a {
+					padding: 1em 1.618em;
+					display: inline-block;
+					border-top: 1px solid rgba(#000,.1);
+					color: inherit;
+					font-family: $headings;
+					font-size: 1.214em;
+					outline-color: transparent;
+					position: relative;
+
+					&.active {
+						color: inherit;
+						position: relative;
+					}
+
+					&:focus {
+						color: inherit;
+					}
+
+					&:before {
+						content: "";
+						display: block;
+						height: 3px;
+						left: -1px;
+						position: absolute;
+						top: -1px;
+						width: calc(100% + 2px);
+						@include transition(all 250ms ease-in-out);
+					}
+				}
+			}
+		}
+
+	}
+
+	// Posts
+	.post.type-post,
+	.page:not(.woocommerce-page) .type-page {
+		.entry-content {
+			font-size: 1.2em;
+		}
+	}
+
+	.hentry {
+		margin-bottom: 5.236em;
+		padding-bottom: 3.618em;
+	}
+
+	#respond {
+		padding-top: 5.236em;
+	}
+
+	.archive .site-main [class*="navigation"],
+	.blog .site-main [class*="navigation"],
+	.search .site-main [class*="navigation"] {
+		margin-bottom: 5.236em;
+	}
+
+	// Products
+	.site-main {
+		ul.products {
+			li.product {
+				@include span(2.25 of 9);
+				font-size: inherit;
+				overflow: visible;
+
+				a {
+					font-size: .857em;
+				}
+
+				h3 {
+					font-weight: 700;
+				}
+
+				.onsale {
+					left: 1.0787em;
+					position: absolute;
+					top: 1.0787em;
+				}
+			}
+		}
+
+		.columns-2 {
+			ul.products {
+				li.product {
+					@include span(4.5 of 9);
+				}
+			}
+		}
+
+		.columns-3 {
+			ul.products {
+				li.product {
+					@include span(3 of 9);
+				}
+			}
+		}
+
+		.columns-4 {
+			ul.products {
+				li.product {
+					@include span(2.25 of 9);
+				}
+			}
+		}
+
+		.columns-5 {
+			ul.products {
+				li.product {
+					@include span(1.8 of 9);
+				}
+			}
+		}
+	}
+
+	.onsale {
+		border: 0;
+		font-size: .75em;
+	}
+
+	.pharmacy-product-section,
+	.storefront-product-section {
+		margin-bottom: 5.236em;
+		padding-bottom: 0;
+
+		&.storefront-product-categories {
+			border-bottom: 0;
+			margin-bottom: 0;
+		}
+
+		> p.clearfix {
+			margin-bottom: 5.236em;
+		}
+	}
+
+	.pharmacy-product-section {
+		padding-top: 5.236em;
+	}
+
+	.storefront-product-section + .pharmacy-product-section {
+		margin-top: 0;
+	}
+
+	.page-template-template-fullwidth-php,
+	.page-template-template-homepage-php,
+	.storefront-full-width-content {
+		.site-main {
+			ul.products {
+				li.product {
+					@include span(3 of 12);
+				}
+			}
+
+			.columns-2 {
+				ul.products {
+					li.product {
+						@include span(6 of 12);
+					}
+				}
+			}
+
+			.columns-3 {
+				ul.products {
+					li.product {
+						@include span(4 of 12);
+					}
+				}
+			}
+
+			.columns-4 {
+				ul.products {
+					li.product {
+						@include span(3 of 12);
+					}
+				}
+			}
+
+			.columns-5 {
+				ul.products {
+					li.product {
+						@include span(2.4 of 12);
+					}
+				}
+			}
+		}
+	}
+
+	.storefront-reviews {
+		ul.product-reviews {
+			li.product-review {
+				margin-bottom: 5.236em;
+			}
+		}
+	}
+
+	// Single product
+	.single-product {
+		div.product {
+			overflow: visible;
+
+			> .onsale {
+				left: 1.0787em;
+				position: absolute;
+				top: 1.0787em;
+			}
+
+			.images {
+				margin-bottom: 3.618em;
+				@include span(5 of 9);
+
+				> a:not(.woocommerce-product-gallery__trigger) {
+					display: block;
+				}
+
+				.thumbnails {
+					a.zoom {
+						margin-bottom: 1.618em;
+					}
+				}
+			}
+
+			.summary {
+				@include span(last 4 of 9);
+				margin-bottom: 5.236em;
+			}
+		}
+	}
+
+	#reviews .commentlist li .description {
+		padding: 0;
+	}
+
+	.storefront-full-width-content.single-product {
+		div.product {
+			.images {
+				@include span(6 of 12);
+
+				> a:not(.woocommerce-product-gallery__trigger) {
+					@include span(5 of 6);
+				}
+
+				.thumbnails {
+					@include span(last 1 of 6);
+
+					a.zoom {
+						width: 100%;
+						float: none;
+					}
+				}
+			}
+
+			.summary {
+				@include span(last 4 of 12);
+				@include post(1 of 12);
+				padding-top: 1.618em;
+			}
+		}
+
+		.related {
+			ul.products {
+				li.product {
+					@include span(3 of 12);
+				}
+			}
+		}
+	}
+
+	// Layout
+	.right-sidebar {
+		.content-area {
+			@include span(9 of 12);
+			margin-top: 0;
+		}
+
+		.widget-area {
+			@include span(last 3 of 12);
+			position: relative;
+		}
+	}
+
+	.left-sidebar {
+		.content-area {
+			@include span(last 9 of 12);
+			margin-top: 0;
+		}
+
+		.widget-area {
+			@include span(3 of 12);
+			position: relative;
+		}
+	}
+
+	.widget {
+		margin-bottom: 5.236em;
+	}
+
+	.widget-area {
+		border-top: 0;
+		margin-bottom: 0;
+		margin-top: 0;
+		padding-top: 0;
+
+		&:before,
+		&:after {
+			display: none;
+		}
+
+		.widget {
+			margin-bottom: 6.11em;
+		}
+	}
+
+	// Footer
+	.footer-widgets {
+		border-bottom: 0;
+	}
+
+	/**
+	 * Full width & homepage template
+	 */
+	.page-template-template-fullwidth-php,
+	.page-template-template-homepage-php,
+	.storefront-full-width-content {
+		.content-area {
+			@include span(12);
+			margin-top: 0;
+		}
+	}
+
+	#infinite-handle {
+		margin-bottom: 5.236em;
+	}
+
+	// Storefront Mega Menus
+	.main-navigation ul li.smm-active {
+		ul.sub-menu {
+			margin-top: 1px;
+
+			li {
+				display: block !important;
+
+				.widget {
+					h3.widget-title {
+						font-size: 1.387em;
+					}
+
+					ul {
+						border-bottom: 0;
+					}
+
+					ul:not(.products) li a {
+						font-weight: bold;
+					}
+
+					ul.products {
+						margin-bottom: -1em;
+
+						li.product:not(.product-category) {
+							font-size: inherit;
+							overflow: visible;
+							padding: 1.618em;
+							border-bottom: 1px solid rgba(#000,.1);
+
+							&:hover {
+								border-bottom-color: rgba(#000,.25);
+							}
+
+							p {
+								margin-bottom: 0;
+							}
+
+							br {
+								display: none;
+							}
+
+							h3 {
+								font-weight: 700;
+							}
+
+							.onsale {
+								left: -1.0787em;
+								position: absolute;
+								top: -1.0787em;
+							}
+
+							.button {
+								margin-top: 1.618em;
+								padding:.618em 1em;
+							}
+						}
+					}
+				}
+			}
+
+			.smm-mega-menu {
+				border-bottom: 1px solid rgba(#000,.1);
+				padding-bottom: 1em;
+			}
+
+			.smm-row {
+				margin-left: auto;
+				margin-right: auto;
+				max-width: 80em;
+			}
+		}
+
+		.smm-row:last-child > div .widget:last-of-type,
+		.widget {
+			margin-bottom: 1.618em;
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.sph-hero,
+	.sprh-hero {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+@media screen and (min-width: 65.141em) {
+	.col-full {
+		padding-left: 4.236em;
+		padding-right: 4.236em;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	/**
+	 * Storefront Hamburger Menu compatibility
+	 */
+	.storefront-hamburger-menu-active {
+		.main-navigation {
+			.menu-toggle {
+				width: 2.724216em;
+				height: 2.724216em;
+				border: 0;
+				font-style: normal;
+
+				&:before {
+					line-height: 2.724216;
+				}
+			}
+		}
+
+		.site-header-cart {
+			.cart-contents {
+				right: 3.618em;
+			}
+		}
+	}
+}
