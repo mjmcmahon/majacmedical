@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1889410259e9ec0084243b8de4f7fc99",
+    "content-hash": "bef1bb0924397d23c1602bf67cb7640b",
     "packages": [
         {
             "name": "composer/installers",
@@ -112,6 +112,41 @@
                 "zikula"
             ],
             "time": "2016-08-13T20:53:52+00:00"
+        },
+        {
+            "name": "digitoimistodude/woothemes-updater",
+            "version": "1.6.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/digitoimistodude/woothemes-updater.git",
+                "reference": "6dc711f2fd1e899aa34fbbb52dc1870235ebeb27"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/digitoimistodude/woothemes-updater/zipball/6dc711f2fd1e899aa34fbbb52dc1870235ebeb27",
+                "reference": "6dc711f2fd1e899aa34fbbb52dc1870235ebeb27",
+                "shasum": ""
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roni Laukkarinen",
+                    "email": "roni@dude.fi",
+                    "homepage": "https://www.dude.fi"
+                }
+            ],
+            "description": "WooThemes Helper for updating WooThemes plugins and lisences via wp-admin.",
+            "homepage": "http://docs.woothemes.com/document/woothemes-helper/",
+            "keywords": [
+                "plugin",
+                "woocommerce",
+                "wordpress"
+            ],
+            "time": "2016-06-14T12:33:02+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
@@ -238,6 +273,166 @@
             "time": "2015-06-11T15:15:30+00:00"
         },
         {
+            "name": "mjmcmahon/homepage-control",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:mjmcmahon/homepage-control",
+                "reference": "2ea0688f76db5e57a8138a7aa2a71c7010173464"
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.3"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPLv2 or later"
+            ],
+            "description": "Re-order or disable the homepage components in certain themes.",
+            "homepage": "http://docs.woothemes.com/document/homepage-control/",
+            "time": "2017-05-01T02:09:16+00:00"
+        },
+        {
+            "name": "mjmcmahon/product-enquiry-pro",
+            "version": "4.3.1",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:mjmcmahon/product-enquiry-pro.git",
+                "reference": "66186de00fe1b8d9c486c88132414b4f0f3558ec"
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.3"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPLv2"
+            ],
+            "description": "Product Enquiry PRO for WooCommerce",
+            "homepage": "https://wisdmlabs.com/woocommerce-product-enquiry-pro/",
+            "time": "2017-05-01T02:05:44+00:00"
+        },
+        {
+            "name": "mjmcmahon/storefront-mega-menus",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:mjmcmahon/storefront-mega-menus.git",
+                "reference": "3a5619b1797d38bfead0acf0bda518468e1579cb"
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.4"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPLv2 or later"
+            ],
+            "description": "Create enhanced full width dropdowns that seamlessly tie into your Storefront powered WooCommerce shop.",
+            "homepage": "http://woothemes.com/products/storefront-mega-menus/",
+            "time": "2017-05-01T02:05:57+00:00"
+        },
+        {
+            "name": "mjmcmahon/storefront-parallax-hero",
+            "version": "1.5.4",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:mjmcmahon/storefront-parallax-hero.git",
+                "reference": "09f9dd8926c6b503123eadd94980ded5cc16c758"
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.4"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPLv2 or later"
+            ],
+            "description": "Allows you to add a hero component to the homepage template of your Storefront powered web site.",
+            "homepage": "https://woocommerce.com/products/storefront-parallax-hero/",
+            "time": "2017-05-01T02:06:11+00:00"
+        },
+        {
+            "name": "mjmcmahon/storefront-powerpack",
+            "version": "1.3.1",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:mjmcmahon/storefront-powerpack.git",
+                "reference": "d65b45732dbaf1c3f2af1d198d269fb27d874a5c"
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.4"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPLv2 or later"
+            ],
+            "description": "A plugin that enabes the effortless customisation of your Storefront",
+            "homepage": "http://woothemes.com/products/storefront-powerpack/",
+            "time": "2017-05-01T02:06:28+00:00"
+        },
+        {
+            "name": "mjmcmahon/storefront-title-toggle",
+            "version": "1.2.3",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:mjmcmahon/storefront-title-toggle.git",
+                "reference": "ce99419ac0b982ed07568399bf9346967887186f"
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.4"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPLv2 or later"
+            ],
+            "description": "Hide titles on a per post/page basis. Must be using the Storefront theme.",
+            "homepage": "https://wordpress.org/plugins/storefront-title-toggle/",
+            "time": "2017-05-01T02:06:51+00:00"
+        },
+        {
+            "name": "mjmcmahon/theme-customisations",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:mjmcmahon/woo-theme-customisation.git",
+                "reference": "9dda62d269528c94b52abad6df4f066d1168d947"
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.4"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPLv2 or later"
+            ],
+            "description": "A handy little plugin to contain your theme customisation snippets.",
+            "homepage": "http://github.com/woothemes/theme-customisations",
+            "time": "2017-05-01T02:05:30+00:00"
+        },
+        {
+            "name": "mjmcmahon/wp-migrate-db",
+            "version": "0.9.2",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:mjmcmahon/wp-migrate-db",
+                "reference": "e381b7433d2833f767670340b2f9e8dc5ac1c965"
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.3"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPLv2 or later"
+            ],
+            "description": "Migrates your database by running find & replace on URLs and file paths",
+            "homepage": "http://deliciousbrains.com/wp-migrate-db-pro",
+            "time": "2017-05-01T00:01:13+00:00"
+        },
+        {
             "name": "oscarotero/env",
             "version": "v1.0.2",
             "source": {
@@ -278,6 +473,60 @@
                 "env"
             ],
             "time": "2016-05-08T17:14:32+00:00"
+        },
+        {
+            "name": "roots/soil",
+            "version": "3.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/roots/soil.git",
+                "reference": "5b9b9d8a878b295f44b35cba826c462b20cc1d9c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/roots/soil/zipball/5b9b9d8a878b295f44b35cba826c462b20cc1d9c",
+                "reference": "5b9b9d8a878b295f44b35cba826c462b20cc1d9c",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "^2.5.1"
+            },
+            "type": "wordpress-plugin",
+            "scripts": {
+                "test": [
+                    "vendor/bin/phpcs --extensions=php --ignore=vendor/ -n -s ."
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ben Word",
+                    "email": "ben@benword.com",
+                    "homepage": "https://github.com/retlehs"
+                },
+                {
+                    "name": "Scott Walkinshaw",
+                    "email": "scott.walkinshaw@gmail.com",
+                    "homepage": "https://github.com/swalkinshaw"
+                }
+            ],
+            "description": "A WordPress plugin which contains a collection of modules to apply theme-agnostic front-end modifications",
+            "homepage": "https://roots.io/plugins/soil/",
+            "keywords": [
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/roots/soil/issues",
+                "forum": "https://discourse.roots.io/",
+                "source": "https://github.com/roots/soil/tree/3.7.1"
+            },
+            "time": "2016-08-30T18:15:45+00:00"
         },
         {
             "name": "roots/wp-password-bcrypt",
@@ -408,15 +657,15 @@
         },
         {
             "name": "wpackagist-plugin/duracelltomi-google-tag-manager",
-            "version": "1.5.1",
+            "version": "1.6.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/duracelltomi-google-tag-manager/",
-                "reference": "tags/1.5.1"
+                "reference": "tags/1.6.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/duracelltomi-google-tag-manager.1.5.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/duracelltomi-google-tag-manager.1.6.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -428,15 +677,15 @@
         },
         {
             "name": "wpackagist-plugin/woocommerce",
-            "version": "3.0.0",
+            "version": "3.0.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/woocommerce/",
-                "reference": "tags/3.0.0"
+                "reference": "tags/3.0.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/woocommerce.3.0.0.zip",
+                "url": "https://downloads.wordpress.org/plugin/woocommerce.3.0.6.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -470,16 +719,16 @@
     "packages-dev": [
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "2.8.1",
+            "version": "2.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "d7cf0d894e8aa4c73712ee4a331cc1eaa37cdc7d"
+                "reference": "f7dfecbee89d68ab475a6c9e17d22bc9b69aed97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/d7cf0d894e8aa4c73712ee4a331cc1eaa37cdc7d",
-                "reference": "d7cf0d894e8aa4c73712ee4a331cc1eaa37cdc7d",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/f7dfecbee89d68ab475a6c9e17d22bc9b69aed97",
+                "reference": "f7dfecbee89d68ab475a6c9e17d22bc9b69aed97",
                 "shasum": ""
             },
             "require": {
@@ -544,7 +793,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2017-03-01T22:17:45+00:00"
+            "time": "2017-05-03T23:30:39+00:00"
         },
         {
             "name": "wpackagist-plugin/reveal-template",
