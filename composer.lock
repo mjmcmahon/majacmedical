@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6edd8c5c1a43ddb6417d1012c5aa412e",
+    "content-hash": "9fc0ae391012473fd3710edab9821274",
     "packages": [
         {
             "name": "composer/installers",
@@ -271,6 +271,26 @@
                 "wordpress"
             ],
             "time": "2015-06-11T15:15:30+00:00"
+        },
+        {
+            "name": "mjmcmahon/custom-sidebars",
+            "version": "3.0.6",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:mjmcmahon/custom-sidebars.git",
+                "reference": "3981753fc40322423c32cc28acc130ff9edf34cb"
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.4"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPLv2 or later"
+            ],
+            "description": "Allows you to create widgetized areas and custom sidebars.",
+            "homepage": "https://wordpress.org/plugins/custom-sidebars/",
+            "time": "2017-05-19T18:29:22+00:00"
         },
         {
             "name": "mjmcmahon/homepage-control",

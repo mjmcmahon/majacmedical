@@ -66,6 +66,10 @@
     {
       "type": "vcs",
       "url" : "git@bitbucket.org:mjmcmahon/wp-migrate-db-pro.git"
+    },
+    {
+      "type": "vcs",
+      "url" : "git@bitbucket.org:mjmcmahon/custom-sidebars.git"
     }
   ],
   "require": {
@@ -88,7 +92,8 @@
     "mjmcmahon/storefront-parallax-hero": "1.5.4",
     "mjmcmahon/storefront-powerpack": "1.3.1",
     "mjmcmahon/storefront-title-toggle": "1.2.3",
-    "mjmcmahon/wp-migrate-db-pro": "1.7.1"
+    "mjmcmahon/wp-migrate-db-pro": "1.7.1",
+    "mjmcmahon/custom-sidebars": "3.0.6"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1",
