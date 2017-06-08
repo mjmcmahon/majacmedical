@@ -44,9 +44,6 @@
             "dist": {
                 "type": "zip",
                 "url": "https://deliciousbrains.com/dl/wp-migrate-db-pro-latest.zip?licence_key=ec6ae92d-7559-468b-9dc3-ca1bce5d2388&site_url=majacmedical.dev"
-            },
-            "require": {
-                "composer/installers": "v1.0.7"
             }
         }
     },
@@ -59,27 +56,9 @@
             "dist": {
                 "type": "zip",
                 "url": "https://deliciousbrains.com/dl/wp-migrate-db-pro-media-files-latest.zip?licence_key=ec6ae92d-7559-468b-9dc3-ca1bce5d2388&site_url=majacmedical.dev"
-            },
-            "require": {
-                "composer/installers": "v1.0.7"
             }
         }
-    },
-    {
-       "type": "package",
-       "package": {
-           "name": "deliciousbrains/wp-migrate-db-pro-cli",
-           "type": "wordpress-plugin",
-           "version": "1.1",
-           "dist": {
-               "type": "zip",
-               "url": "https://deliciousbrains.com/dl/wp-migrate-db-pro-cli-latest.zip?licence_key=ec6ae92d-7559-468b-9dc3-ca1bce5d2388&site_url=majacmedical.dev"
-           },
-           "require": {
-               "composer/installers": "v1.0.7"
-           }
-       }
-    },
+    }
     {
       "type": "vcs",
       "url" : "git@bitbucket.org:mjmcmahon/homepage-control"
@@ -133,9 +112,8 @@
     "wpackagist-plugin/woocommerce": "3.0.7",
     "wpackagist-plugin/wordfence": "6.3.6",
     "digitoimistodude/woothemes-updater": "1.6.2",
-    "deliciousbrains/wp-migrate-db-pro": "*",
-    "deliciousbrains/wp-migrate-db-pro-media-files": "*",
-    "deliciousbrains/wp-migrate-db-pro-cli": "*",
+    "deliciousbrains/wp-migrate-db-pro": "1.7.1",
+    "deliciousbrains/wp-migrate-db-pro-media-files": "1.4.7",
     "roots/soil": "3.7.1",
     "mjmcmahon/homepage-control": "2.0.2",
     "mjmcmahon/storefront-mega-menus": "1.4.0",
