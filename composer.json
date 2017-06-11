@@ -122,7 +122,8 @@
     "mjmcmahon/storefront-title-toggle": "1.2.3",
     "mjmcmahon/custom-sidebars": "3.0.6",
     "mjmcmahon/theme-customisations": "1.0.0",
-    "mjmcmahon/product-enquiry-pro": "4.3.1"
+    "mjmcmahon/product-enquiry-pro": "4.3.1",
+    "mjmcmahon/woocommerce-products-filter": "4.1.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1",
