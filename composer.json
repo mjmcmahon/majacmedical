@@ -116,6 +116,7 @@
     "wpackagist-plugin/woocommerce": "3.0.8",
     "wpackagist-plugin/wordfence": "6.3.6",
     "wpackagist-plugin/mailgun": "1.5.8.4",
+    "wpackagist-plugin/redirection": "2.6.5",
     "digitoimistodude/woothemes-updater": "1.6.2",
     "deliciousbrains/wp-migrate-db-pro": "1.7.1",
     "deliciousbrains/wp-migrate-db-pro-media-files": "1.4.7",
