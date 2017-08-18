@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "66ce170708a7533187eeabfd662fbc95",
+    "content-hash": "85918e66ecf8c397f06986aeb9bcdc52",
     "packages": [
         {
             "name": "composer/installers",
@@ -709,7 +709,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/contact-form-7.4.9.zip",
-                "reference": null,
+                "reference": "tags/4.9",
                 "shasum": null
             },
             "require": {
@@ -729,7 +729,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/disable-comments.1.7.zip",
-                "reference": null,
+                "reference": "tags/1.7",
                 "shasum": null
             },
             "require": {
@@ -749,7 +749,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/duracelltomi-google-tag-manager.1.7.1.zip",
-                "reference": null,
+                "reference": "tags/1.7.1",
                 "shasum": null
             },
             "require": {
@@ -769,7 +769,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/mailgun.1.5.8.4.zip",
-                "reference": null,
+                "reference": "tags/1.5.8.4",
                 "shasum": null
             },
             "require": {
@@ -789,7 +789,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/redirection.2.7.1.zip",
-                "reference": null,
+                "reference": "tags/2.7.1",
                 "shasum": null
             },
             "require": {
@@ -809,7 +809,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/taxonomy-terms-order.1.5.zip",
-                "reference": null,
+                "reference": "tags/1.5",
                 "shasum": null
             },
             "require": {
@@ -829,7 +829,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/woocommerce.3.1.2.zip",
-                "reference": null,
+                "reference": "tags/3.1.2",
                 "shasum": null
             },
             "require": {
@@ -849,7 +849,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/wordfence.6.3.6.zip",
-                "reference": null,
+                "reference": "tags/6.3.6",
                 "shasum": null
             },
             "require": {
@@ -949,7 +949,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/reveal-template.3.2.zip",
-                "reference": null,
+                "reference": "tags/3.2",
                 "shasum": null
             },
             "require": {
