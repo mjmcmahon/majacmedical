@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c0a22fc0bdc17b9029b0f6106b19194f",
+    "content-hash": "4660b0d2b46ad0821ac6c4fd3cf648f4",
     "packages": [
         {
             "name": "composer/installers",
@@ -717,26 +717,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/contact-form-7/"
-        },
-        {
-            "name": "wpackagist-plugin/disable-comments",
-            "version": "1.7",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/disable-comments/",
-                "reference": "tags/1.7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/disable-comments.1.7.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/disable-comments/"
         },
         {
             "name": "wpackagist-plugin/duracelltomi-google-tag-manager",
