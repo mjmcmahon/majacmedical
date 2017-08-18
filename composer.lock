@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "31ccbf7b677a269452c8239fbc6527c2",
+    "content-hash": "c0a22fc0bdc17b9029b0f6106b19194f",
     "packages": [
         {
             "name": "composer/installers",
@@ -297,11 +297,11 @@
         },
         {
             "name": "mjmcmahon/custom-sidebars",
-            "version": "3.0.8",
+            "version": "3.0.9",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:mjmcmahon/custom-sidebars.git",
-                "reference": "9f0003ab002cbb3343f01abccd765239ef788aec"
+                "reference": "c2adc8ed020b3e6a060e66dfc0a9afa63c3fca8a"
             },
             "require": {
                 "composer/installers": "~1.0",
@@ -313,7 +313,7 @@
             ],
             "description": "Allows you to create widgetized areas and custom sidebars.",
             "homepage": "https://wordpress.org/plugins/custom-sidebars/",
-            "time": "2017-06-11T21:58:50+00:00"
+            "time": "2017-08-17T16:48:16+00:00"
         },
         {
             "name": "mjmcmahon/homepage-control",
@@ -337,11 +337,11 @@
         },
         {
             "name": "mjmcmahon/product-enquiry-pro",
-            "version": "4.3.1",
+            "version": "5.0",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:mjmcmahon/product-enquiry-pro.git",
-                "reference": "66186de00fe1b8d9c486c88132414b4f0f3558ec"
+                "reference": "49397ef42ab9c3bd9e3011c0bc4862ee780cc9d2"
             },
             "require": {
                 "composer/installers": "~1.0",
@@ -353,7 +353,7 @@
             ],
             "description": "Product Enquiry PRO for WooCommerce",
             "homepage": "https://wisdmlabs.com/woocommerce-product-enquiry-pro/",
-            "time": "2017-05-01T02:05:44+00:00"
+            "time": "2017-08-17T15:19:57+00:00"
         },
         {
             "name": "mjmcmahon/storefront-mega-menus",
@@ -454,6 +454,26 @@
             "description": "A handy little plugin to contain your theme customisation snippets.",
             "homepage": "http://github.com/woothemes/theme-customisations",
             "time": "2017-05-01T02:05:30+00:00"
+        },
+        {
+            "name": "mjmcmahon/woocommerce-product-search",
+            "version": "1.10.2",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:mjmcmahon/woocommerce-product-search.git",
+                "reference": "554799a47279c570eb9c3e5cc059ccf85c9bbb54"
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.4"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPLv2 or later"
+            ],
+            "description": "Special product search plugin by Woocommerce",
+            "homepage": "https://woocommerce.com/products/woocommerce-product-search/",
+            "time": "2017-08-17T15:28:53+00:00"
         },
         {
             "name": "mjmcmahon/woocommerce-products-filter",
@@ -697,6 +717,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/contact-form-7/"
+        },
+        {
+            "name": "wpackagist-plugin/disable-comments",
+            "version": "1.7",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/disable-comments/",
+                "reference": "tags/1.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/disable-comments.1.7.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/disable-comments/"
         },
         {
             "name": "wpackagist-plugin/duracelltomi-google-tag-manager",
