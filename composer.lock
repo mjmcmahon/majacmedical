@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "394fbdff5dcdf812b1877ce43f95848c",
+    "content-hash": "85918e66ecf8c397f06986aeb9bcdc52",
     "packages": [
         {
             "name": "composer/installers",
@@ -337,11 +337,11 @@
         },
         {
             "name": "mjmcmahon/product-enquiry-pro",
-            "version": "4.3.1",
+            "version": "5.0",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:mjmcmahon/product-enquiry-pro.git",
-                "reference": "66186de00fe1b8d9c486c88132414b4f0f3558ec"
+                "reference": "49397ef42ab9c3bd9e3011c0bc4862ee780cc9d2"
             },
             "require": {
                 "composer/installers": "~1.0",
@@ -353,7 +353,7 @@
             ],
             "description": "Product Enquiry PRO for WooCommerce",
             "homepage": "https://wisdmlabs.com/woocommerce-product-enquiry-pro/",
-            "time": "2017-05-01T02:05:44+00:00"
+            "time": "2017-08-17T15:19:57+00:00"
         },
         {
             "name": "mjmcmahon/storefront-mega-menus",
