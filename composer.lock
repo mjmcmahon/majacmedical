@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "85918e66ecf8c397f06986aeb9bcdc52",
+    "content-hash": "5b2f8e57b18933ca220f6b3e91d86f4a",
     "packages": [
         {
             "name": "composer/installers",
@@ -780,16 +780,16 @@
         },
         {
             "name": "wpackagist-plugin/redirection",
-            "version": "2.7.1",
+            "version": "2.7.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/redirection/",
-                "reference": "tags/2.7.1"
+                "reference": "tags/2.7.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/redirection.2.7.1.zip",
-                "reference": "tags/2.7.1",
+                "url": "https://downloads.wordpress.org/plugin/redirection.2.7.3.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -800,16 +800,16 @@
         },
         {
             "name": "wpackagist-plugin/taxonomy-terms-order",
-            "version": "1.5",
+            "version": "1.5.2.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/taxonomy-terms-order/",
-                "reference": "tags/1.5"
+                "reference": "tags/1.5.2.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/taxonomy-terms-order.1.5.zip",
-                "reference": "tags/1.5",
+                "url": "https://downloads.wordpress.org/plugin/taxonomy-terms-order.1.5.2.2.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
