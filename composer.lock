@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5b2f8e57b18933ca220f6b3e91d86f4a",
+    "content-hash": "9f35d90ac78e67d4afc9468ff167c79a",
     "packages": [
         {
             "name": "composer/installers",
@@ -172,20 +172,20 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.8.1",
+            "version": "4.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "75bbc8dade6d66b66c7184656df7b3d545d31baa"
+                "reference": "d500aae1793990e4874cf794b6cf88ce60a38918"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/75bbc8dade6d66b66c7184656df7b3d545d31baa",
-                "reference": "75bbc8dade6d66b66c7184656df7b3d545d31baa",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/d500aae1793990e4874cf794b6cf88ce60a38918",
+                "reference": "d500aae1793990e4874cf794b6cf88ce60a38918",
                 "shasum": ""
             },
             "require": {
-                "johnpbloch/wordpress-core": "4.8.1",
+                "johnpbloch/wordpress-core": "4.8.2",
                 "johnpbloch/wordpress-core-installer": "^1.0",
                 "php": ">=5.3.2"
             },
@@ -207,24 +207,27 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2017-08-02T21:47:41+00:00"
+            "time": "2017-09-19T22:27:16+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "4.8.1",
+            "version": "4.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "eee7b6128469d31803da3a07aaac9c442f81758e"
+                "reference": "706faa0d7b6b57a25d4acd18331dd71dfa6b01cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/eee7b6128469d31803da3a07aaac9c442f81758e",
-                "reference": "eee7b6128469d31803da3a07aaac9c442f81758e",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/706faa0d7b6b57a25d4acd18331dd71dfa6b01cf",
+                "reference": "706faa0d7b6b57a25d4acd18331dd71dfa6b01cf",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
+            },
+            "provide": {
+                "wordpress/core-implementation": "4.8.2"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -244,7 +247,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2017-08-02T21:47:36+00:00"
+            "time": "2017-09-19T22:27:11+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -337,11 +340,11 @@
         },
         {
             "name": "mjmcmahon/product-enquiry-pro",
-            "version": "5.0",
+            "version": "4.4.0",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:mjmcmahon/product-enquiry-pro.git",
-                "reference": "49397ef42ab9c3bd9e3011c0bc4862ee780cc9d2"
+                "reference": "d35e6289e073aaba1ee1558e463036e0bae29f4a"
             },
             "require": {
                 "composer/installers": "~1.0",
@@ -353,7 +356,7 @@
             ],
             "description": "Product Enquiry PRO for WooCommerce",
             "homepage": "https://wisdmlabs.com/woocommerce-product-enquiry-pro/",
-            "time": "2017-08-17T15:19:57+00:00"
+            "time": "2017-06-11T22:09:54+00:00"
         },
         {
             "name": "mjmcmahon/storefront-mega-menus",
@@ -760,16 +763,16 @@
         },
         {
             "name": "wpackagist-plugin/mailgun",
-            "version": "1.5.8.4",
+            "version": "1.5.8.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/mailgun/",
-                "reference": "tags/1.5.8.4"
+                "reference": "tags/1.5.8.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/mailgun.1.5.8.4.zip",
-                "reference": "tags/1.5.8.4",
+                "url": "https://downloads.wordpress.org/plugin/mailgun.1.5.8.5.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -820,16 +823,16 @@
         },
         {
             "name": "wpackagist-plugin/woocommerce",
-            "version": "3.1.2",
+            "version": "3.2.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/woocommerce/",
-                "reference": "tags/3.1.2"
+                "reference": "tags/3.2.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/woocommerce.3.1.2.zip",
-                "reference": "tags/3.1.2",
+                "url": "https://downloads.wordpress.org/plugin/woocommerce.3.2.0.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
