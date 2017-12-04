@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d39af1d00fe669253ff3fa73443f2c37",
+    "content-hash": "15f3be9e862f81ad27f53ad04b21445c",
     "packages": [
         {
             "name": "composer/installers",
@@ -300,11 +300,11 @@
         },
         {
             "name": "mjmcmahon/custom-sidebars",
-            "version": "3.0.9",
+            "version": "3.1.1",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:mjmcmahon/custom-sidebars.git",
-                "reference": "c2adc8ed020b3e6a060e66dfc0a9afa63c3fca8a"
+                "reference": "a4853879372f97f70dff2532f3d1f6f7b2b69bc8"
             },
             "require": {
                 "composer/installers": "~1.0",
@@ -316,7 +316,7 @@
             ],
             "description": "Allows you to create widgetized areas and custom sidebars.",
             "homepage": "https://wordpress.org/plugins/custom-sidebars/",
-            "time": "2017-08-17T16:48:16+00:00"
+            "time": "2017-12-04T20:42:13+00:00"
         },
         {
             "name": "mjmcmahon/homepage-control",
@@ -420,7 +420,7 @@
         },
         {
             "name": "mjmcmahon/storefront-title-toggle",
-            "version": "1.2.3",
+            "version": "1.2.4",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:mjmcmahon/storefront-title-toggle.git",
