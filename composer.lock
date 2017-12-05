@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "15f3be9e862f81ad27f53ad04b21445c",
+    "content-hash": "815623eee7b1977df9c4566b99045690",
     "packages": [
         {
             "name": "composer/installers",
@@ -497,6 +497,26 @@
             "description": "Flexible, easy and robust products filter for WooCommerce store site!",
             "homepage": "http://woocommerce-filter.com/",
             "time": "2017-06-10T23:55:02+00:00"
+        },
+        {
+            "name": "mjmcmahon/wp-forms",
+            "version": "1.4.2",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:mjmcmahon/wp-forms.git",
+                "reference": "51b54b244d2e1337bcd358e65284a068da59a607"
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.4"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPLv2 or later"
+            ],
+            "description": "Drag & Drop WordPress Form Builder.",
+            "homepage": "https://wpforms.com/",
+            "time": "2017-12-05T17:12:34+00:00"
         },
         {
             "name": "oscarotero/env",
