@@ -40,7 +40,7 @@
         "package": {
             "name": "deliciousbrains/wp-migrate-db-pro",
             "type": "wordpress-plugin",
-            "version": "1.7.2",
+            "version": "1.8.1",
             "dist": {
                 "type": "zip",
                 "url": "https://deliciousbrains.com/dl/wp-migrate-db-pro-latest.zip?licence_key=ec6ae92d-7559-468b-9dc3-ca1bce5d2388&site_url=majacmedical.dev"
@@ -52,7 +52,7 @@
         "package": {
             "name": "deliciousbrains/wp-migrate-db-pro-media-files",
             "type": "wordpress-plugin",
-            "version": "1.4.7",
+            "version": "1.4.9",
             "dist": {
                 "type": "zip",
                 "url": "https://deliciousbrains.com/dl/wp-migrate-db-pro-media-files-latest.zip?licence_key=ec6ae92d-7559-468b-9dc3-ca1bce5d2388&site_url=majacmedical.dev"
@@ -110,6 +110,10 @@
     {
       "type": "vcs",
       "url" : "git@bitbucket.org:mjmcmahon/wp-forms.git"
+    },
+    {
+      "type": "vcs",
+      "url" : "git@bitbucket.org:mjmcmahon/wordpress-seo-premium.git"
     }
   ],
   "require": {

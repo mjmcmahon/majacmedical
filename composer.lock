@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "815623eee7b1977df9c4566b99045690",
+    "content-hash": "295af7f6226ae06bee27c30b89e1856e",
     "packages": [
         {
             "name": "composer/installers",
@@ -126,7 +126,7 @@
         },
         {
             "name": "deliciousbrains/wp-migrate-db-pro-media-files",
-            "version": "1.4.7",
+            "version": "1.4.9",
             "dist": {
                 "type": "zip",
                 "url": "https://deliciousbrains.com/dl/wp-migrate-db-pro-media-files-latest.zip?licence_key=ec6ae92d-7559-468b-9dc3-ca1bce5d2388&site_url=majacmedical.dev",
@@ -723,15 +723,15 @@
         },
         {
             "name": "wpackagist-plugin/contact-form-7",
-            "version": "4.9.1",
+            "version": "4.9.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/contact-form-7/",
-                "reference": "tags/4.9.1"
+                "reference": "tags/4.9.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/contact-form-7.4.9.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/contact-form-7.4.9.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -843,15 +843,15 @@
         },
         {
             "name": "wpackagist-plugin/woocommerce",
-            "version": "3.2.5",
+            "version": "3.2.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/woocommerce/",
-                "reference": "tags/3.2.5"
+                "reference": "tags/3.2.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/woocommerce.3.2.5.zip",
+                "url": "https://downloads.wordpress.org/plugin/woocommerce.3.2.6.zip",
                 "reference": null,
                 "shasum": null
             },
