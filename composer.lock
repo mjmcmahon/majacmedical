@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "295af7f6226ae06bee27c30b89e1856e",
+    "content-hash": "3d2d4c4a816e64bf0ec2f60f7bfc32f2",
     "packages": [
         {
             "name": "composer/installers",
@@ -517,6 +517,26 @@
             "description": "Drag & Drop WordPress Form Builder.",
             "homepage": "https://wpforms.com/",
             "time": "2017-12-05T17:12:34+00:00"
+        },
+        {
+            "name": "mjmcmahon/yoast-seo-premium",
+            "version": "6.0",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:mjmcmahon/yoast-seo-premium.git",
+                "reference": "5a3457e10946953d4410e060cf983e3adf695cb5"
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.4"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPLv2 or later"
+            ],
+            "description": "Yoast SEO now also known as Wordpress SEO Premium",
+            "homepage": "https://my.yoast.com/downloads",
+            "time": "2017-12-29T21:01:05+00:00"
         },
         {
             "name": "oscarotero/env",

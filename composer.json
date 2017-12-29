@@ -113,7 +113,7 @@
     },
     {
       "type": "vcs",
-      "url" : "git@bitbucket.org:mjmcmahon/wordpress-seo-premium.git"
+      "url" : "git@bitbucket.org:mjmcmahon/yoast-seo-premium.git"
     }
   ],
   "require": {
@@ -145,7 +145,8 @@
     "mjmcmahon/product-enquiry-pro": "4.3.1",
     "mjmcmahon/woocommerce-products-filter": "4.1.0",
     "mjmcmahon/woocommerce-product-search": "1.10.2",
-    "mjmcmahon/wp-forms": "1.4.2"
+    "mjmcmahon/wp-forms": "1.4.2",
+    "mjmcmahon/yoast-seo-premium": "6.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1",
