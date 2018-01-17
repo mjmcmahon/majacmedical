@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "988fbdc732b3645a9174b782a28e2022",
+    "content-hash": "60011d47422c2762a8980f0790f6812b",
     "packages": [
         {
             "name": "composer/installers",
@@ -115,7 +115,7 @@
         },
         {
             "name": "deliciousbrains/wp-migrate-db-pro",
-            "version": "1.7.2",
+            "version": "1.8.1",
             "dist": {
                 "type": "zip",
                 "url": "https://deliciousbrains.com/dl/wp-migrate-db-pro-latest.zip?licence_key=ec6ae92d-7559-468b-9dc3-ca1bce5d2388&site_url=majacmedical.dev",
