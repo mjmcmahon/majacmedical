@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "60011d47422c2762a8980f0790f6812b",
+    "content-hash": "04f1004f7adc17dcc6f153d7cdff29a9",
     "packages": [
         {
             "name": "composer/installers",
@@ -340,11 +340,11 @@
         },
         {
             "name": "mjmcmahon/product-enquiry-pro",
-            "version": "4.3.1",
+            "version": "6.0.3",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:mjmcmahon/product-enquiry-pro.git",
-                "reference": "66186de00fe1b8d9c486c88132414b4f0f3558ec"
+                "reference": "77c8e46c896329e36e42a19652008d0ad6f11e3a"
             },
             "require": {
                 "composer/installers": "~1.0",
@@ -356,7 +356,7 @@
             ],
             "description": "Product Enquiry PRO for WooCommerce",
             "homepage": "https://wisdmlabs.com/woocommerce-product-enquiry-pro/",
-            "time": "2017-05-01T02:05:44+00:00"
+            "time": "2018-01-17T18:30:18+00:00"
         },
         {
             "name": "mjmcmahon/storefront-mega-menus",
@@ -992,7 +992,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/reveal-template.3.2.zip",
-                "reference": "tags/3.2",
+                "reference": null,
                 "shasum": null
             },
             "require": {
