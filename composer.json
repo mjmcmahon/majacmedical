@@ -124,10 +124,10 @@
     "oscarotero/env": "^1.0",
     "roots/wp-password-bcrypt": "1.0.0",
     "wpackagist-plugin/contact-form-7": "5.*",
-    "wpackagist-plugin/duracelltomi-google-tag-manager": "1.7.*",
-    "wpackagist-plugin/woocommerce": "3.2.*",
+    "wpackagist-plugin/duracelltomi-google-tag-manager": "1.8",
+    "wpackagist-plugin/woocommerce": "3.4.*",
     "wpackagist-plugin/wordfence": "6.3.6",
-    "wpackagist-plugin/mailgun": "1.5.8.x",
+    "wpackagist-plugin/mailgun": "1.5.x",
     "wpackagist-plugin/redirection": "3.*",
     "wpackagist-plugin/taxonomy-terms-order": "1.5.*",
     "wpackagist-plugin/disable-comments": "1.7.*",
@@ -150,7 +150,7 @@
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1",
-    "wpackagist-plugin/reveal-template": "3.2"
+    "wpackagist-plugin/reveal-template": "3.3"
   },
   "extra": {
     "installer-paths": {
